@@ -1,0 +1,4 @@
+DB_HOST = 'localhost'
+DB_NAME = 'scanomaly_db'
+DB_USER = 'XXXXXXXXXXXXXXXXXX'
+DB_PASS = 'XXXXXXXXXXXXXXXXXX'
