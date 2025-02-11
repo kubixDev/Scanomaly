@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/kubixDev/Scanomaly/master/readmeImages/scanomalyLogo.png" width="370"/>
+<img src="https://raw.githubusercontent.com/kubixDev/Scanomaly/master/readmeImages/scanomalyLogo.png" width="420"/>
 
 [![forthebadge](https://raw.githubusercontent.com/kubixDev/Scanomaly/master/readmeImages/madeWithPythonBadge.svg)](https://forthebadge.com)  [![forthebadge](https://raw.githubusercontent.com/kubixDev/Scanomaly/master/readmeImages/madeWithReactBadge.svg)](https://forthebadge.com)  [![forthebadge](https://raw.githubusercontent.com/kubixDev/Scanomaly/master/readmeImages/builtWithLoveBadge.svg)](https://forthebadge.com)
 
