@@ -10,3 +10,22 @@ def get_db_connection():
         password=DB_PASS
     )
     return conn
+
+
+def init_db():
+    conn = get_db_connection()
+    cursor = conn.cursor()
+
+    cursor.execute("""
+        CREATE TABLE IF NOT EXISTS results (
+            id SERIAL PRIMARY KEY,
+            timestamp TIMESTAMP NOT NULL,
+            heatmap_image BYTEA NOT NULL,
+            prediction TEXT NOT NULL,
+            confidence FLOAT NOT NULL
+        );
+    """)
+
+    conn.commit()
+    cursor.close()
+    conn.close()

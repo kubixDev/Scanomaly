@@ -5,14 +5,18 @@ import datetime
 import numpy as np
 import tensorflow as tf
 from PIL import Image
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, app
 from flask_cors import CORS
 from model import create_and_train_model, create_feature_model
 from utils import process_image, generate_and_apply_heatmap
-from db import get_db_connection
+from db import get_db_connection, init_db
 
 
 app = Flask(__name__)
+
+# automatic database init
+with app.app_context():
+    init_db()
 
 # setting up CORS for frontend
 CORS(app, resources={
